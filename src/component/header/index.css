@@ -1,0 +1,60 @@
+.header {
+  color: #1d0303;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+}
+
+.header-top {
+  text-align: right;
+  line-height: 40px;
+  height: 40px;
+  padding-right: 20px;
+  border-bottom: 1px solid #1da57a;
+}
+
+.header-bottom {
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+.header-bottom-left {
+  position: relative;
+  width: 25%;
+  text-align: center;
+
+  /*  画一个三角形
+   &::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 100%;
+    transform: translateX(100%);
+
+    border-top: 20px solid red;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  } */
+}
+.header-bottom-right {
+  width: 75%;
+  text-align: right;
+  margin-right: 10px;
+}
+
+span {
+  margin-right: 10px;
+}
+
+img {
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+}
+.logOut {
+  width: 60px;
+  height: 30px;
+  border-radius: 40px;
+  text-align: center;
+}

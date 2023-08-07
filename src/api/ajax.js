@@ -8,15 +8,16 @@ export default function ajax(url, data = {}, type = "GET") {
       //1.发送异步请求
       promise = axios.get(url, { params: data });
     } else {
-      axios.post(url, data);
+      //发post请求
+      promise = axios.post(url, data);
     }
-    //2.如果成功了，调用resolve(value)
+    //2.如果成功,调用resolve
     promise
-      .then((result) => {
-        resolve(result.data);
+      .then((response) => {
+        resolve(response.data);
       })
       .catch((error) => {
-        message.error("请求出错了：" + error.message);
+        message.error("请求出错了:" + error.message);
       });
   });
 }

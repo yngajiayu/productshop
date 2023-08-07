@@ -1,0 +1,8 @@
+.link-button {
+  background-color: white;
+  border: 1px solid rgb(177, 171, 171);
+  margin-right: 10px;
+  outline: none;
+  color: black;
+  cursor: pointer;
+}
